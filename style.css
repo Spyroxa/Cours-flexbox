@@ -38,3 +38,10 @@ body{
 .image{
     background-image: url("https://html5up.net/uploads/demos/directive/images/pic01.jpg");
 }
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
