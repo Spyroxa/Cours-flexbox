@@ -9,9 +9,11 @@ body{
     align-items: center;
     background-image: url(https://html5up.net/uploads/demos/directive/images/header.jpg);
     background-size: cover;
+    color: white;
+    text-align: center;
 }
 .main{
-    height: 100vh;
+    height: 80%;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -19,14 +21,20 @@ body{
     flex-direction: column;
 }
 .container{
-    
     width: 80vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: aqua;
+    border: 5px;
 }
 .texte{
+    display: flex;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.image{
+    background-image: url("https://html5up.net/uploads/demos/directive/images/pic01.jpg");
 }
