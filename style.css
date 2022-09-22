@@ -22,6 +22,35 @@ header a{
     text-align: center;
     width: 2.35em;
 }
+.image {
+    background-image: url("https://html5up.net/uploads/demos/directive/images/pic01.jpg");
+    background-size: contain;
+    color: #ffffff;
+    cursor: default;
+    display: inline-block;
+    font-size: 5em;
+    height:100%;
+    line-height: 2.35em;
+    margin: 0 0 0 0;
+    text-align: center;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.image:hover{
+    filter:brightness(60%)
+}
+.image a:hover{
+    font-size: 1.5em;
+}
+.image.deux{
+    background-image: url("https://html5up.net/uploads/demos/directive/images/pic02.jpg");   
+}
+.image.trois{
+    background-image: url("https://html5up.net/uploads/demos/directive/images/pic03.jpg")
+}
+.image a{
+    color: #ffffff;
+}
 .logo.deux{
     border: solid 1px rgba(224, 224, 224, 0.75);
     margin:auto;
@@ -75,6 +104,26 @@ p{
     text-align: center;
     margin-bottom: 10px;
 }
+.tete::before{
+    background: rgba(224, 224, 224, 0.75);
+    content: '';
+    left: 50%;
+    position: absolute;
+    width: 1px;
+    z-index: 0;
+    opacity: 0.15;
+    top: 0;
+    height: calc(100% - 20px);
+    
+}
+.tete::after{
+    background: rgba(224, 224, 224, 0.75);
+    content: '';
+    left: 50%;
+    position: absolute;
+    width: 1px;
+    z-index: 0;
+}
 .tete p br{
     display: none;
 }
@@ -86,6 +135,16 @@ p{
     align-items: center;
     flex-direction: column;
 }
+.main ::after{
+    background: rgba(224, 224, 224, 0.75);
+    content: '';
+    left: 50%;
+    position: absolute;
+    width: 1px;
+    z-index: 0;
+    height: 100;
+}
+
 .container{
     width: 85vw;
     display: flex;
@@ -98,9 +157,7 @@ p{
     margin-bottom: 15px;
     margin-top: 20px;
 }
-.fa-thin.fa-signal-bars{
-    width: 100%;
-}
+
 .un{
     border-right-width: 0px;
     border-left-width: 0px;
@@ -116,11 +173,16 @@ p{
     padding-left: 1em;
     padding-right: 1em;
     border-top: solid 1px rgba(224, 224, 224, 0.75);
-
 }
-/* .image {
-    background-image: url("https://html5up.net/uploads/demos/directive/images/pic01.jpg");
-} */
+.texte.trois::before{
+    background: rgba(224, 224, 224, 0.75);
+    content: '';
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
 footer{
     background-color: #4eb980;
     text-align: center;
@@ -146,6 +208,16 @@ footer{
     background-repeat: repeat-x;
     height: 23vh;
     width: 100%;
+}
+.footer ::before{
+    background: rgba(224, 224, 224, 0.75);
+    content: '';
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    width: 1px;
+    z-index: -1;
 }
 /* .form{
     display: flex;
@@ -191,6 +263,9 @@ input[type="button"]{
     height: auto;
     margin-bottom: 20px
 }
+input[type="button"]:hover{
+    background-color: rgba(84, 77, 85, 0.9);
+}
 input[type="submit"]{
     width: 85vw;
     color: #4eb980;
@@ -203,6 +278,20 @@ input[type="submit"]{
     font-weight: 700;
     letter-spacing: 0.125em;
 }
+input[type="text"]:active{
+    background: rgba(141, 215, 176, 0.6);
+}
+input[type="email"]:active{
+    background: rgba(141, 215, 176, 0.6);
+}
+textarea:active{
+    background: rgba(141, 215, 176, 0.6);
+}
+.bouton:hover {
+    background-color: #4eb980;
+    color: white;
+  }
+  
 .forme{
     display: flex;
     flex-direction: column;
@@ -247,6 +336,8 @@ input[type="submit"]{
     }
     .container{
         flex-direction: row;
+        margin: 0;
+        height: 18em;
     }
     .container.deux{
         flex-direction: row-reverse;
@@ -256,7 +347,10 @@ input[type="submit"]{
         flex-direction: column;
     }
     .texte{
-        width: 48%;
+        width: 50%;
+    }
+    .image{
+        width: 50%;
     }
     .texte.un{
         align-items: start;
@@ -281,9 +375,10 @@ input[type="submit"]{
         margin-bottom: 60px;
     }
     .name{
-        width: 21em;
+        width: 20.5em;
         height: 6vh;
         font-size: 13pt;
+        margin-right: 5px;
     }
     .message{
         width: 41em;
@@ -305,5 +400,13 @@ input[type="submit"]{
     }
     .copyright br{
         display: none;
+    }
+    .tete::before{
+        height: calc(100% - 25px);
+    }
+    .image a{
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
 }
