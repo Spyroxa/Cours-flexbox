@@ -35,6 +35,7 @@ header a{
     text-align: center;
     width: 100%;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .image:hover{
     filter:brightness(60%)
@@ -312,6 +313,14 @@ textarea:active{
     flex-direction: row;
     justify-content: center;
 }
+.logo.deux a{
+    cursor: pointer;
+    color: white;
+}
+.logo.deux :hover{
+    background: rgba(141, 215, 176, 0.6);
+}
+
 /*font-family: 'Source Sans Pro', sans-serif*/
 @media screen and (min-width:700px){
     .logo{
@@ -337,7 +346,8 @@ textarea:active{
     .container{
         flex-direction: row;
         margin: 0;
-        height: 18em;
+        height: 20em;
+        width: 60%;
     }
     .container.deux{
         flex-direction: row-reverse;
@@ -347,10 +357,10 @@ textarea:active{
         flex-direction: column;
     }
     .texte{
-        width: 50%;
+        width: 44%;
     }
     .image{
-        width: 50%;
+        width: 48.5%;
     }
     .texte.un{
         align-items: start;
@@ -408,5 +418,12 @@ textarea:active{
         width: 100%;
         height: 100%;
         text-align: center;
+    }
+    .fa-solid{
+        font-size: 15vh;
+        padding-top: 10vh;
+    }
+    .image a:hover{
+        font-size: 2em;
     }
 }
