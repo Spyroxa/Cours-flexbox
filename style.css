@@ -26,12 +26,10 @@ header a{
     background-image: url("https://html5up.net/uploads/demos/directive/images/pic01.jpg");
     background-size: contain;
     color: #ffffff;
-    cursor: default;
     display: inline-block;
     font-size: 5em;
     height:100%;
     line-height: 2.35em;
-    margin: 0 0 0 0;
     text-align: center;
     width: 100%;
     background-repeat: no-repeat;
@@ -54,7 +52,6 @@ header a{
 }
 .logo.deux{
     border: solid 1px rgba(224, 224, 224, 0.75);
-    margin:auto;
     margin-top: 1.5em;
     margin-right: 0.25em;
     margin-left: 0.25em;
@@ -94,7 +91,6 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background-image: url(https://html5up.net/uploads/demos/directive/images/header.jpg);*/
     background-image: url("https://html5up.net/uploads/demos/directive/assets/css/images/top-1280.svg"), url("https://html5up.net/uploads/demos/directive/assets/css/images/overlay.png"), url("https://html5up.net/uploads/demos/directive/images/header.jpg");
     background-position: bottom center, top left, center center;
     background-repeat: repeat, repeat, no-repeat;
@@ -143,7 +139,6 @@ p{
     position: absolute;
     width: 1px;
     z-index: 0;
-    height: 100;
 }
 
 .container{
@@ -195,10 +190,6 @@ footer{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    /* background-image: url("https://html5up.net/uploads/demos/directive/assets/css/images/bottom-3200.svg");
-    background-position: top center;
-    background-size: 1280px 184px;
-    background-repeat: repeat-x; */
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -220,12 +211,6 @@ footer{
     width: 1px;
     z-index: -1;
 }
-/* .form{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-} */
 .name{
     width: 85vw;
     margin-top: 5px;
@@ -244,8 +229,6 @@ input[type="text"], input[type="email"],input[type="button"], select, textarea{
     height: 5vh;
     background-color: #4eb980;
     color: inherit;
-    
-    /*font: inherit;*/
 }
 textarea{
     padding: 0.5em 0.75em;
@@ -297,6 +280,7 @@ textarea:active{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .copyright{
     color: rgba(255, 255, 255, 0.5);
@@ -316,12 +300,12 @@ textarea:active{
 .logo.deux a{
     cursor: pointer;
     color: white;
+    text-decoration: underline none;
 }
 .logo.deux :hover{
     background: rgba(141, 215, 176, 0.6);
 }
 
-/*font-family: 'Source Sans Pro', sans-serif*/
 @media screen and (min-width:700px){
     .logo{
         font-size: 2.25em;

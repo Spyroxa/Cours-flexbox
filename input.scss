@@ -1,0 +1,12 @@
+$primary-color:#6e6e6e;;
+$secondary-color:#ffffff;
+$third-color:#4eb980;
+$font-stack: 'Source Sans Pro', sans-serif;
+@use "sass:math";
+
+    
+body{
+    color:$primary-color;
+    font:$font-stack;
+    @debug math.$pi;
+}
